@@ -9,9 +9,10 @@ import { PlayerContext } from '../context/playerContext';
 import PlayedHistory from './PlayedHistory';
 import Music from './Music';
 import AlbumOnly from './AlbumOnly';
+import PlayList from './PlayList';
 import PlaylistPage from './PlaylistPage';
 import Profile from './Profile';
-import PlayList from './Playlist'
+
 
 
 

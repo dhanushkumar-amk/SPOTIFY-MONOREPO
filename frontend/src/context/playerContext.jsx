@@ -8,7 +8,7 @@ import toast from 'react-hot-toast';
 export const PlayerContext = createContext();
 
 const PlayerContextProvider = (props) => {
-  const url = "http://localhost:4000";
+  const url = "https://spotify-monorepo-t5km.onrender.com";
   const [songsData, setSongsData] = useState([]);
   const [albumsData, setAlbumData] = useState([]);
 
