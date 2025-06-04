@@ -14,7 +14,7 @@ import UserPage from './pages/userPage/UserPage';
 import Statatics from './pages/Statatics/Statatics';
 
 
-export const url = 'http://localhost:4000';
+export const url = 'https://spotify-monorepo-t5km.onrender.com';
 
 const App = () => {
   const [showAuth, setShowAuth] = useState(false);
