@@ -28,7 +28,10 @@ const createServer = async () => {
   app.use(limiter);
   app.use(detectBot);
   app.use(express.json());
-  app.use(cors());
+  app.use(cors({
+    origin : "https://spotify-monorepo-frontend.onrender.com",
+    credentials : true,
+  }));
   app.use(cookieParser());
   app.use(compression());
   app.use(helmet());
