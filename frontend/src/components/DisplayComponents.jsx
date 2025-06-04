@@ -9,9 +9,9 @@ import { PlayerContext } from '../context/playerContext';
 import PlayedHistory from './PlayedHistory';
 import Music from './Music';
 import AlbumOnly from './AlbumOnly';
-import PlayList from './playList';
 import PlaylistPage from './PlaylistPage';
 import Profile from './Profile';
+import PlayList from './Playlist'
 
 
 
@@ -54,7 +54,7 @@ const DisplayComponents = ({ isSidebarExpanded }) => {
         <Route path='/collection' element={<AlbumOnly/>} />
         <Route path='/profile' element={<Profile/>} />
       </Routes>
-      : null    
+      : null
         }
     </div>
   );

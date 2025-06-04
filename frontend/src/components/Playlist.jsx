@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { PlayerContext } from '../context/playerContext';
 import toast from 'react-hot-toast';
-import { useNavigate } from 'react-router-dom';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
 const emojiList = ['🎵', '🎶', '🔥', '💿', '📀', '🎧', '🎼', '🎹'];
@@ -15,7 +14,7 @@ const PlayList = () => {
   const [editingId, setEditingId] = useState(null);
   const [editedName, setEditedName] = useState('');
 
-  const navigate = useNavigate();
+
 
   const fetchPlaylists = async () => {
     setLoading(true);
@@ -36,6 +35,8 @@ const PlayList = () => {
       }
     } catch (error) {
       toast.error('Error fetching playlists');
+      console.log(error);
+      
     }
     setLoading(false);
   };
