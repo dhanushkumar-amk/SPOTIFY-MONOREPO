@@ -36,7 +36,7 @@ const PlayList = () => {
     } catch (error) {
       toast.error('Error fetching playlists');
       console.log(error);
-      
+
     }
     setLoading(false);
   };

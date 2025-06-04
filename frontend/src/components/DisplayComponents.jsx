@@ -9,9 +9,9 @@ import { PlayerContext } from '../context/playerContext';
 import PlayedHistory from './PlayedHistory';
 import Music from './Music';
 import AlbumOnly from './AlbumOnly';
-import PlayList from './PlayList';
 import PlaylistPage from './PlaylistPage';
 import Profile from './Profile';
+import Playlist from './Playlist';
 
 
 
@@ -49,7 +49,7 @@ const DisplayComponents = ({ isSidebarExpanded }) => {
         <Route path="/" element={<Home />} />
         <Route path="/album/:id" album={albumsData.find((x) => (x._id == albumId))} element={<AlbumPage />} />
         <Route path='/history' element={<PlayedHistory/>} />
-        <Route path='/playlist' element={<PlayList/>} />
+        <Route path='/playlist' element={<Playlist/>} />
           <Route path="/playlist/:id" element={<PlaylistPage />} />
         <Route path='/music' element={<Music/>} />
         <Route path='/collection' element={<AlbumOnly/>} />
